@@ -5,4 +5,9 @@
 
 <h2>My Movie List</h2>
 
-<p>Hello from our View Template!</p>
+<ul>
+    @for (int i = 0; i < (int)ViewData["userId"]!; i++)
+    {
+        <li>@ViewData["user"]</li>
+    }
+</ul>
