@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers
@@ -7,15 +8,17 @@ namespace MvcMovie.Controllers
     {
         //
         // GET /HelloWorld/
-        public IActionResult Index()
+        public IActionResult Index(string name,int id)
         {
+            ViewData["user"] = name;
+            ViewData["userId"] = id;
             return View();
         }
         //
         // GET /HelloWorld/Welcome
-        public string Welcome(int id)
+        public IActionResult Welcome(int id)
         {
-            return HtmlEncoder.Default.Encode($"Hello {id} go to vault fast");
+            return View();
         }
 
     }
