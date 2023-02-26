@@ -22,6 +22,7 @@ namespace MvcMovie.Models
                         Title = "GhostBusters 2",
                         ReleaseDate = DateTime.Parse("1985-2-3"),
                         Genre = "Comedy/Adventure",
+                        Rating = "G",
                         Price = 45.99M
                     },
                     new Movie
@@ -29,6 +30,7 @@ namespace MvcMovie.Models
                         Title = "Bad boys",
                         ReleaseDate = DateTime.Parse("1995-4-7"),
                         Genre = "Comedy/Adventure",
+                        Rating = "PG-13",
                         Price = 45.99M
                     },
                     new Movie
@@ -36,6 +38,7 @@ namespace MvcMovie.Models
                         Title = "GhostBusters",
                         ReleaseDate = DateTime.Parse("1983-5-1"),
                         Genre = "Comedy/Adventure",
+                        Rating = "M",
                         Price = 45.99M
                     },
                     new Movie
@@ -43,6 +46,7 @@ namespace MvcMovie.Models
                         Title = "Twelve Monkeys",
                         ReleaseDate = DateTime.Parse("1995-2-3"),
                         Genre = "Sci-fi/Triller",
+                        Rating = "P",
                         Price = 45.99M
                     }
                 );
